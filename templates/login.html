@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/static/cssjs/pintuer.css" />
+    <script src="/static/cssjs/jquery.js"></script>
+    <script src="/static/cssjs/pintuer.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<form method="post" class="form-auto" action="/main/">
+    {% csrf_token %}
+	<div class="form-group">
+		<div class="field field-icon">
+			<input type="text" class="input" id="username" name="username" size="30" placeholder="手机/邮箱/账号" />
+			<span class="icon icon-user"></span>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="field field-icon">
+			<input type="password" class="input" id="password" name="password" size="30" placeholder="请输入密码" />
+			<span class="icon icon-key"></span>
+		</div>
+	</div>
+	<div class="form-button">
+		<button class="button" type="submit">
+			登录</button>
+	</div>
+</form>
+</form>
+
+</body>
+</html>
