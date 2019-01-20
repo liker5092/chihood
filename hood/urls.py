@@ -17,8 +17,12 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+
+
 urlpatterns = [
-    path('',views.index),
-    path('login',views.login),
+    path('',views.hood, name='kucun'), #登陆成功的首页(库存)
+    # path(),
+    # path(),
+
 
 ]

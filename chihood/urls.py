@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from hood import urls
+from . import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('hood/',include(urls)),
+    #path('admin/', admin.site.urls),
+    path('hood/',include('hood.urls')), #库存APP，登陆首页
+    path('', views.index, name='index'),
+    path('login/', views.login, name='login'),
+    path('logout/',views.logout, name='logout'),
 ]
