@@ -8,6 +8,8 @@ from . import models
 #库存主页面即登陆主页面
 
 def hood(request):
+    print(request)
+
     return HttpResponse("hello hood!!")
 
 
